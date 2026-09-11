@@ -1,0 +1,145 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  padding: 24px;
+}
+
+.welcome-card {
+  width: 100%;
+  max-width: 430px;
+  min-height: 760px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 28px 32px;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+}
+
+.logo-mark {
+  width: 92px;
+  height: 74px;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.logo-person {
+  position: absolute;
+  bottom: 0;
+  width: 42px;
+  height: 48px;
+  background: #16a36a;
+  border-radius: 22px 22px 18px 18px;
+}
+
+.logo-person::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 8px;
+  width: 26px;
+  height: 26px;
+  background: #16a36a;
+  border-radius: 50%;
+}
+
+.logo-person-left {
+  left: 5px;
+}
+
+.logo-person-right {
+  right: 5px;
+  height: 58px;
+  background: #52c596;
+}
+
+.logo-person-right::before {
+  background: #52c596;
+}
+
+h1 {
+  margin: 0;
+  font-size: 56px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -2px;
+  color: #171717;
+}
+
+h1 span {
+  color: #16a36a;
+}
+
+.tagline {
+  margin: 20px 0 42px;
+  color: #6b7280;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.actions {
+  width: 100%;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.primary-button,
+.secondary-button {
+  width: 100%;
+  height: 56px;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.primary-button {
+  border: none;
+  color: #ffffff;
+  background: #16a36a;
+  box-shadow: 0 10px 25px rgba(22, 163, 106, 0.18);
+}
+
+.primary-button:hover {
+  background: #128b5a;
+  transform: translateY(-1px);
+}
+
+.secondary-button {
+  border: 1.5px solid #16a36a;
+  color: #16a36a;
+  background: #ffffff;
+}
+
+.secondary-button:hover {
+  background: #e8f7f0;
+}
+
+.footer-text {
+  position: absolute;
+  bottom: 24px;
+  margin: 0;
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+@media (max-width: 480px) {
+  .welcome-card {
+    min-height: 100vh;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+}
