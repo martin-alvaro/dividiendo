@@ -1,6 +1,9 @@
+import { useNavigate } from 'react-router-dom'
 import './App.css'
 
 function App() {
+  const navigate = useNavigate()
+
   return (
     <main className="app">
       <section className="welcome-card">
@@ -10,7 +13,7 @@ function App() {
         </div>
 
         <h1>
-          Split<span>Up</span>
+          Miti<span>Miti</span>
         </h1>
 
         <p className="tagline">
@@ -20,11 +23,17 @@ function App() {
         </p>
 
         <div className="actions">
-          <button className="primary-button">
+          <button
+            className="primary-button"
+            onClick={() => navigate('/login')}
+          >
             Iniciar sesión
           </button>
 
-          <button className="secondary-button">
+          <button
+            className="secondary-button"
+            onClick={() => navigate('/register')}
+          >
             Crear cuenta
           </button>
         </div>

@@ -24,4 +24,68 @@ body,
 body {
   min-width: 320px;
   background: #ffffff;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.notification-button {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: #e8f7f0;
+  color: #15803d;
+  font-size: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.notification-button:hover {
+  transform: translateY(-1px);
+}
+
+.notification-badge {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  border-radius: 999px;
+  background: #e85d5d;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.demo-box {
+  margin-top: 8px;
+  padding: 14px;
+  border: 1px solid #dfe7e3;
+  border-radius: 14px;
+  background: #f4faf7;
+  color: #4b5563;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.demo-box strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #171717;
+}
+
+.demo-box p {
+  margin: 0 0 6px;
+}
+
+.demo-box b {
+  color: #171717;
 }
